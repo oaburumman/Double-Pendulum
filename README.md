@@ -9,4 +9,5 @@ The MATLAB utility `pendplot.m` can be used to visualize the double pendulum in 
 <br /> `function ydot = fpend(y)` evaluates f(y). The current state of the pendulum can then be described by the vector y=(θ1,θ2,ω1,ω2),and the first order system can be written as ̇y=f(y).
 
 <br /> `fpend.m` implements a fourth-order Runge-Kutta method that integrates the system ̇y=f(y) from t= 0 to t= 100 with step size h= 0.05. For each case,the function θ<sub>2</sub>(*t*) is plotted versus time. Cases 3 and 4 demonstrate the *initial value sensitivity* of the system, namely, that a small perturbation can lead to drastically different solutions.
+
 <br /> Running Case 1 in problem 2 with the five step sizes h= 0.05/2(k−1), k= 1, 2, 3, 4, and h= 0.001. We compute the value of θ<sub>2</sub>(*t*) for each step size. After considering the last result the exact solution, and plot the four errors as a function of h in a loglog-plot.
